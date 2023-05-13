@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="description" content="Justin Ventures, LLC.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+        <title>{{.Title}}</title>
+        <style>
+            @media print {
+                nav {
+                    display: none;
+                }
+            }
+            nav {
+                padding-left: var(--spacing);
+                padding-right: var(--spacing);
+            }
+        </style>
+    </head>
+    <body>
+    <nav>
+        <ul>
+            <li><a href="/"><span>Justin Ventures</span></a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        {{.Page}}
+    </main>
+    </body>
+</html>
